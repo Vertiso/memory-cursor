@@ -1,0 +1,22 @@
+{
+  "name": "vertiso-memory",
+  "version": "0.2.1",
+  "description": "Portable, user-owned memory for AI agents through a remote OAuth MCP server.",
+  "author": {
+    "name": "Vertiso Corporation",
+    "email": "support@vertiso.ai",
+    "url": "https://memory.vertiso.ai"
+  },
+  "homepage": "https://memory.vertiso.ai/docs/install",
+  "repository": "https://github.com/Vertiso/memory-cursor",
+  "license": "MIT",
+  "logo": "https://memory.vertiso.ai/icon.png",
+  "keywords": [
+    "memory",
+    "mcp",
+    "oauth",
+    "cursor",
+    "agents"
+  ],
+  "mcpServers": "./.mcp.json"
+}
