@@ -10,7 +10,7 @@
   "homepage": "https://memory.vertiso.ai/docs/install",
   "repository": "https://github.com/Vertiso/memory-cursor",
   "license": "MIT",
-  "logo": "https://memory.vertiso.ai/icon.png",
+  "logo": "assets/logo.png",
   "keywords": [
     "memory",
     "mcp",
