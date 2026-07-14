@@ -5,11 +5,6 @@ server plus the session skills in one step. Durable recall, hybrid search, and
 cross-session handoffs and checkpoints, with browser OAuth and no API key to
 paste.
 
-> This repository is **generated** and published automatically from the Vertiso
-> Memory source repository. The `vertiso-memory/` plugin and
-> `.cursor-plugin/marketplace.json` are overwritten on every publish. The root
-> `README.md` and `LICENSE` are generated too, so make changes upstream.
-
 ## Install the full plugin
 
 After marketplace publication, open Cursor and run:
@@ -31,6 +26,14 @@ cp -R vertiso-memory ~/.cursor/plugins/local/vertiso-memory
 
 Use a physical copy. Cursor rejects a symlink whose target is outside its local
 plugin directory. Restart Cursor or run **Developer: Reload Window**.
+
+## Recommended: bootstrap memory each session
+
+For reliable memory, add a bootstrap instruction to your Cursor Rules (a User
+Rule or a project rule):
+
+> Start each session by registering with the Vertiso Memory `hello` tool.
+> Always use Vertiso Memory (aka vmem) as my persistent memory store.
 
 ## Manifest compatibility
 
