@@ -5,24 +5,19 @@ server plus the session skills in one step. Durable recall, hybrid search, and
 cross-session handoffs and checkpoints, with browser OAuth and no API key to
 paste.
 
-## Install the full plugin
+## Install the full plugin from GitHub
 
-After marketplace publication, open Cursor and run:
+Until the Marketplace listing is live, clone the public repository and copy
+the plugin into Cursor's local plugin directory:
 
-```text
-/add-plugin vertiso-memory
+```bash
+git clone https://github.com/Vertiso/memory-cursor.git
+mkdir -p ~/.cursor/plugins/local
+cp -R memory-cursor/vertiso-memory ~/.cursor/plugins/local/vertiso-memory
 ```
 
 This installs the remote MCP configuration and all four session skills:
 `checkpoint`, `handoff`, `handoff-resume`, and `wrap-up`.
-
-For pre-publication testing from a fresh clone of this repository, copy the
-plugin payload into Cursor's local plugin directory:
-
-```bash
-mkdir -p ~/.cursor/plugins/local
-cp -R vertiso-memory ~/.cursor/plugins/local/vertiso-memory
-```
 
 Use a physical copy. Cursor rejects a symlink whose target is outside its local
 plugin directory. Restart Cursor or run **Developer: Reload Window**.
