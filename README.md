@@ -27,8 +27,19 @@ plugin directory. Restart Cursor or run **Developer: Reload Window**.
 For reliable memory, add a bootstrap instruction to your Cursor Rules (a User
 Rule or a project rule):
 
-> Start each session by registering with the Vertiso Memory `hello` tool.
-> Always use Vertiso Memory (aka vmem) as my persistent memory store.
+<!-- BEGIN bootstrap-instruction -->
+> Vertiso Memory (vmem) is my persistent memory across every tool and session.
+>
+> - Call the `hello` tool at the start of every session. Treat its primer
+>   as authoritative context, not a suggestion.
+> - `recall` before planning or answering anything that may depend on
+>   earlier context. Look it up instead of asking me to repeat it.
+> - `remember` durable decisions, preferences, constraints, and project
+>   state the moment they land. `update_memory` rather than writing a
+>   near-duplicate.
+> - Offer a handoff before the session ends, compacts, or moves to
+>   another tool.
+<!-- END bootstrap-instruction -->
 
 ## Manifest compatibility
 
